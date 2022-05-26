@@ -10,30 +10,27 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+
 }
 
-/************* Header *************/
-header,
-.sidebar {
-    position: fixed;
-    top: 0;
+.main-part {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #141922;
+
 }
 
-header {
-    left: 100px;
-    width: calc(100% - 100px);
-    height: 90px;
-    background: #080b12;
-}
 
 /************* Sidebar*************/
 .sidebar {
     left: 0;
     padding: 20px;
-    height: 100vh;
     width: 250px;
     background-color: black;
     color: white;
+    z-index: 3;
+
 
 }
 
@@ -91,7 +88,8 @@ li {
 }
 
 /* Profile sidebar  */
-.download-side {
+.profile-side {
+    height: 80px;
     border-bottom: 1px solid white;
 
 }
@@ -102,11 +100,21 @@ li {
 /************* Main-content *************/
 
 .container-main {
+    position: relative;
     overflow: auto;
-    left: 100px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #141922;
+}
+
+.site-header { 
+  position: absolute;
+  top: 0px;
+    background-color: #080b12;
+    height: 80px;
+    z-index: -1;
+
+
 }
 
 
@@ -118,11 +126,12 @@ li {
 /************* Footer *************/
 
 .container-footer {
-    bottom:0;
+    position: sticky;
+    bottom: 0;
     height: 80px;
     width: 100%;
-    background-color: #e20808;
-    z-index: 2;
+    background-color: #282828;
+
 
 
 }
