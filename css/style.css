@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -7,131 +8,157 @@
 }
 
 
-
 body {
     font-family: 'Montserrat', sans-serif;
 
 }
 
-.main-part {
-    position: relative;
-    height: 100%;
+/* ******** Container general ******** */
+#wrapper {
     width: 100%;
-    background-color: #141922;
-
-}
-
-
-/************* Sidebar*************/
-.sidebar {
-    left: 0;
-    padding: 20px;
-    width: 250px;
+    height: 100vh;
     background-color: black;
-    color: white;
-    z-index: 3;
-
-
-}
-
-.logo {
-    width: 140px;
-
-}
-
-li {
-    list-style: none;
-}
-
-/* Navigation - sidebar  */
-
-.personal {
-    padding-top: 10px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.personal-align {
-    position: relative;
-    bottom: 6px;
-}
-
-.icons-sidebar {
-    width: 25px;
-    padding-top: 10px;
-
-
-}
-
-/* Playlist  */
-
-.create-playlist {
-    padding-top: 30px;
-
-}
-
-#crea-align {
-    position: relative;
-    bottom: 10px;
-}
-
-.fa-square-plus {
-    font-size: 45px;
-    padding-right: 10px;
-}
-
-.playlist-side {
-    font-size: 13px;
-    padding-top: 20px;
-    line-height: 35px;
-    padding-bottom: 100px;
-}
-
-/* Profile sidebar  */
-.profile-side {
-    height: 80px;
-    border-bottom: 1px solid white;
-
 }
 
 
-
-
-/************* Main-content *************/
-
-.container-main {
-    position: relative;
+main {
+    height: calc(100vh - 90px);
     overflow: auto;
-    width: 100%;
+
+}
+
+main::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Main - sidebar  */
+main nav {
+    float: left;
+    width: 60px;
     height: 100%;
-    background-color: #141922;
-}
-
-.site-header { 
-  position: absolute;
-  top: 0px;
-    background-color: #080b12;
-    height: 80px;
-    z-index: -1;
-
+    background-color: black;
 
 }
 
+@media all and (min-width:601px) {
+    main nav .sidebar {
+        width: 250px;
+    }
 
-
-
-
-
-
-/************* Footer *************/
-
-.container-footer {
-    position: sticky;
-    bottom: 0;
-    height: 80px;
-    width: 100%;
-    background-color: #282828;
+    #line-side {
+        display: none;
+        color: white;
+        margin: 0 auto;
+    }
 
 
 
 }
+
+/* Main - Content  */
+#content {
+    float: left;
+    width: calc(100% - 60px);
+    height: 100%;
+    background-color: red;
+    overflow: auto;
+}
+
+@media all and (min-width:601px) {
+    #content {
+        float: left;
+    }
+
+    footer {
+        height: 90px;
+        background-color: grey;
+    }
+
+    /* Nav icons */
+
+    .sidebar {
+        position: relative;
+    }
+
+    .logo {
+        margin: 10px;
+        padding-bottom: 5px;
+
+    }
+
+    .personal {
+        margin: 12px;
+        line-height: 40px;
+
+    }
+
+    /* Top banner */
+    .top-banner {
+        height: 90px;
+        background-color: rgb(68, 68, 68);
+    }
+
+    /* Buttons */
+
+    .white-text {
+        color: white;
+    }
+
+
+    .big-btn {
+        float: right;
+        text-align: center;
+        font-size: 13px;
+        width: 200px;
+        height: 40px;
+        line-height: 35px;
+        margin: 20px;
+        background-color: lightblue;
+        border-radius:25px;
+        border: 1px solid white;
+
+    }
+
+
+    /* COntainer account */
+
+    .container.account {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .download {
+        /* position: relative;
+        bottom: 10px; */
+        width: 25px;
+        height: 10px;
+        margin: 15px;
+
+
+    }
+
+    #line-side {
+        display: none;
+        color: white;
+        margin: 0 auto;
+    }
+
+    #user {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .profile {
+        /* position:relative
+        bottom: 5px; */
+        margin: 100%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: grey;
+    }
