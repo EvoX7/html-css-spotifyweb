@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -54,7 +55,6 @@ main nav {
     }
 
 
-
 }
 
 /* Main - Content  */
@@ -62,103 +62,217 @@ main nav {
     float: left;
     width: calc(100% - 60px);
     height: 100%;
-    background-color: red;
+    background-color: #141922;
     overflow: auto;
 }
+
+.aw {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Top banner */
+.top-banner {
+    height: 90px;
+    background-color: #080b12;
+}
+
+/* Buttons */
+
+.big-btn {
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    width: 200px;
+    height: 40px;
+    line-height: 35px;
+    margin: 20px;
+    background-color: #080b12;
+    border-radius: 25px;
+    border: 1px solid white;
+
+}
+
+/* Center actions */
+
+.center-actions-top ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.center-actions-bottom ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+.center-actions-top {
+    margin: 0 auto;
+    font-size: 14px;
+    width: 500px;
+    height: 80px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.center-actions-bottom {
+    margin: 0 auto;
+    font-size: 14px;
+    width: 220px;
+    height: 80px;
+}
+
+/* Green underline  */
+
+#g-under {
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(101, 247, 101);
+    
+}
+
+
+.actions {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    color: rgb(138, 138, 138);
+}
+
+#green-underline {
+    border-bottom: 1px soldi green;
+
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    position: relative;
+}
+
+.logo {
+    margin: 10px;
+    padding: 1px;
+
+}
+
+.personal {
+    margin: 12px;
+    line-height: 40px;
+    padding: 2px;
+
+}
+
+
+/* Container account sidebar */
+
+.container.account {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.download {
+    position: relative;
+    bottom: -450px;
+    width: 20px;
+    height: 10px;
+    margin: 20px;
+
+}
+
+#line-side {
+    display: none;
+    color: white;
+    margin: 0 auto;
+}
+
+#user {
+    width: 25px;
+    height: 25px;
+
+}
+
+.profile {
+    position: relative;
+    bottom: -420px;
+    right: 45px;
+    margin: 100%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: grey;
+}
+
+/******* Covers  *******/
+
+.container-covers {
+    padding:5px;
+}
+
+.covers {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: white;
+    padding: 17px;
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+}
+
+h4 {
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+}
+
+.subtitles {
+    padding-top: 5px;
+    font-size: 12px;
+   
+}
+
+.container-covers img {
+    width: 180px;
+    height: 180px;
+}
+
+.title{
+    padding-top: 10px;
+    padding-bottom:30px;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media all and (min-width:601px) {
     #content {
         float: left;
     }
+}
 
     footer {
         height: 90px;
-        background-color: grey;
-    }
-
-    /* Nav icons */
-
-    .sidebar {
-        position: relative;
-    }
-
-    .logo {
-        margin: 10px;
-        padding-bottom: 5px;
-
-    }
-
-    .personal {
-        margin: 12px;
-        line-height: 40px;
-
-    }
-
-    /* Top banner */
-    .top-banner {
-        height: 90px;
         background-color: rgb(68, 68, 68);
-    }
-
-    /* Buttons */
-
-    .white-text {
-        color: white;
-    }
-
-
-    .big-btn {
-        float: right;
-        text-align: center;
-        font-size: 13px;
-        width: 200px;
-        height: 40px;
-        line-height: 35px;
-        margin: 20px;
-        background-color: lightblue;
-        border-radius:25px;
-        border: 1px solid white;
-
-    }
-
-
-    /* COntainer account */
-
-    .container.account {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .download {
-        /* position: relative;
-        bottom: 10px; */
-        width: 25px;
-        height: 10px;
-        margin: 15px;
-
-
-    }
-
-    #line-side {
-        display: none;
-        color: white;
-        margin: 0 auto;
-    }
-
-    #user {
-        width: 30px;
-        height: 30px;
-
-    }
-
-    .profile {
-        /* position:relative
-        bottom: 5px; */
-        margin: 100%;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        text-align: center;
-        background-color: grey;
     }
