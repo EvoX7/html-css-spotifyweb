@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <title>My spotify</title>
 </head>
 
@@ -16,19 +17,20 @@
       <nav class="sidebar">
 
         <div class="personal">
-          <div class="logo"><img src="./img/logo-small.svg" alt="logo"></div>
-          <img src="img/home.svg" alt="home">
+          <div class="logo"> <a href="#"><img src="./img/logo-small.svg" alt="logo"></a> </div>
 
-          <img src="img/search.svg" alt="cerca">
+          <div class="left-border highlight-2"><a href="#"><img src="img/home.svg" alt="home"></a></div>
 
-          <img src="img/libreria.svg" alt="libreria">
+          <a href="#"><img src="img/search.svg" alt="cerca"></a>
+
+          <a href="#"><img src="img/libreria.svg" alt="libreria"></a>
 
         </div>
         <div class="container-account">
           <div class="download">
-            <img src="./img/download.svg" alt="download">
+            <a href="#"><img src="./img/download.svg" alt="download"></a>
             <hr id="line-side">
-            <img id="user" src="./img/profile.svg" alt="profile">
+            <a href="#"><img id="user" src="./img/profile.svg" alt="profile"></a>
           </div>
         </div>
 
@@ -36,8 +38,10 @@
 
       <!-- Header-button  -->
       <div class="top-banner">
-        <div class="big-btn"> <a class="aw" href="https://www.spotify.com/it/premium/">EFFETTUA L'UPGRADE</a>
-        </div>
+        <a class="aw" href="https://www.spotify.com/it/premium/">
+          <div class="big-btn">EFFETTUA L'UPGRADE</div>
+        </a>
+
       </div>
 
       <section id="content">
@@ -46,12 +50,16 @@
 
         <div class="center-actions">
           <ul>
-            <li id="g-under"> <a class="aw" href="#">IN EVIDENZA</a> </li>
-            <li> <a class="aw" href="#">PODCAST</a> </li>
-            <li> <a class="aw" href="#">CLASSIFICHE</a> </li>
-            <li> <a class="aw" href="#">GENERI E MOOD</a> </li>
-            <li> <a class="aw" href="#">NUOVE USCITE</a> </li>
-            <li> <a class="aw" href="#">SCOPRI</a> </li>
+            <li class="trans-border"> <a class="aw" href="#">IN<span class="highlight">&nbsp;EVIDENZ</span>A</a> </li>
+            <li class="trans-border"> <a class="aw" href="#">P<span class="highlight">ODCAS</span>T</a>
+            </li>
+            <li class="trans-border"> <a class="aw" href="#">C<span class="highlight">LASSIFICH</span>E</a>
+            </li>
+            <li class="trans-border"> <a class="aw" href="#">G<span class="highlight">ENERI E
+                  MOO</span>D</a> </li>
+            <li class="trans-border"> <a class="aw" href="#">N<span class="highlight">UOVE USCIT</span>E</a>
+            </li>
+            <li class="trans-border"> <a class="aw" href="#">S<span class="highlight">COPR</span>I</a> </li>
           </ul>
         </div>
         <!-- Covers  -->
@@ -139,12 +147,92 @@
 
           </div>
 
-        </div>
+          <!-- Popular artists -->
+          <div class="container-covers">
+            <h1>Artisti pi&#249; popolari</h1>
+            <p class="subtitles-2">Pi&#249; ascolti, pi&#249; accurati saranno i suggerimenti.</p>
+            <div class="covers-2">
 
+              <!-- 01  -->
+              <div class="cropped">
+                <img src="./img/player_left.jpg" alt="clark">
+                <div class="title">
+                  <h4>Clark Grisworld</h4>
+                </div>
+              </div>
+              <!-- 02  -->
+              <div class="cropped">
+                <img src="./img/einaudi.jpeg" alt="einaudi">
+                <div class="title">
+                  <h4>Ludovico Einaudi</h4>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
+      <section id="player">
+
+        <!-- Player album  -->
+        <div class="player-album">
+          <div class="player-album-cover">
+            <img src="./img/sinister.jpeg" alt="sinister">
+            <div class="player-album-title">
+              <h4 class="artist-name">Sinister</h4>
+              <p class="artist-name-2">Brano</p>
+              <p class="artist-name-2">Nome</p>
+            </div>
+
+          </div>
+
+          <!-- Player album title 
+                    <div class="player-album-title">
+                        <h4 class="artist-name">Sinister</h4>
+                        <p class="artist-name-2">Brano</p>
+                        <p class="artist-name-2">Nome</p>
+                    </div> -->
+
+          <!-- Player icons  -->
+          <div class="player-album-icons">
+
+            <a class="ag" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="ag" href="#"><i class="fa-regular fa-folder"></i></a>
+
+          </div>
+
+        </div>
+        <div class="player-controller">
+
+          <!-- Top controller  -->
+          <div class="top-controller">
+            <i class="fa-solid fa-shuffle"></i>
+
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-regular fa-circle-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-arrows-rotate"></i>
+
+          </div>
+
+          <!-- Bottom Controller -->
+          <div class="bottom-controller">
+            <div class="playing">
+              <div class="box-line">
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="player-audio">
+
+        </div>
+      </section>
 
     </footer>
 
