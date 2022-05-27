@@ -60,8 +60,13 @@ main nav {
 }
 
 .aw {
-    color: rgb(221, 221, 221);
+    color: rgb(145, 145, 145);
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.aw:hover {
+    color: white;
 }
 
 .ag {
@@ -69,6 +74,8 @@ main nav {
     text-decoration: none;
 
 }
+
+
 
 
 /* Top banner */
@@ -99,13 +106,14 @@ main nav {
 .highlight:hover {
     filter: brightness(100%);
     padding-top: 5px;
-    border-bottom: 3px solid rgb(217, 255, 160);
+    border-bottom: 3px solid rgb(136, 179, 73);
 
 }
 
 
 .highlight-2:hover {
-    border-left: 2px solid rgb(217, 255, 160);
+    transform: scale(1.1);
+
 
 }
 
@@ -141,9 +149,16 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
-.logo {}
+.logo {
+    padding-left: 2px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
 
 .personal {
     margin: 12px;
@@ -152,11 +167,16 @@ li {
 
 }
 
+
+
+
 .left-border {
     border-left: 2px solid transparent;
 
-
 }
+
+
+
 
 /* Container account sidebar */
 
@@ -281,7 +301,7 @@ footer #player {
     align-items: center;
     width: 30%;
     height: 60px;
-    
+
 
 }
 
@@ -314,18 +334,18 @@ footer #player {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
+
 }
 
 .fa-heart:hover {
-    content:'';
-    color:red;
+    content: '';
+    color: red;
 
 }
 
 .fa-folder:hover {
-    content:'';
-    color:rgb(42, 42, 255);
+    content: '';
+    color: rgb(42, 42, 255);
 
 }
 
@@ -344,7 +364,7 @@ footer #player {
     text-align: center;
     width: 40%;
     height: 60px;
-    
+
 }
 
 .top-controller {
@@ -384,23 +404,23 @@ footer #player {
 /* Center player  */
 
 h5 {
-    padding-top: 2px;
+    padding-top: 5px;
     color: white;
     font-size: 12px;
 }
 
 .playing .time1 {
     padding-right: 10px;
-    color:white;
-    font-size:11px;
+    color: white;
+    font-size: 11px;
     font-weight: bolder;
 
 }
 
 .playing .time2 {
     padding-left: 10px;
-    color:white;
-    font-size:11px;
+    color: white;
+    font-size: 11px;
     font-weight: bolder;
 
 }
@@ -443,10 +463,36 @@ h5 {
 
 /* Player audio right  */
 .player-audio {
+    margin-top: 10px;
     width: 25%;
     height: 20px;
-    background-color: orange;
-    
+    word-spacing: 3px;
+    color:white;
+
+}
+
+.audio-icons {
+    padding:10px;
+
+}
+
+.playing .box-line2 {
+    width: 50%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.playing .box-line2 .line2 {
+    height: 4px;
+    border-radius: 10px;
+    background-color: white;
+    width: 10px;
+}
+
+#volume {
+    text-align: center;
+    padding-left: 70px;
 }
 
 
